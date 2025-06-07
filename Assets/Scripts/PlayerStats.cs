@@ -9,6 +9,11 @@ public class PlayerStats : MonoBehaviour
     private Animator anim;
 
     public bool isDead = false;
+
+    public float GetHealth()
+    {
+        return health;
+    }
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -38,4 +43,5 @@ public class PlayerStats : MonoBehaviour
             isDead = true;
         }
     }
+
 }

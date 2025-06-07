@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 
     public GroundChecker groundChecker;
     public PlayerStats stats;
+    public Inventory inventory;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         stats = GetComponent<PlayerStats>();
+        inventory = GetComponent<Inventory>();
     }
 
     // Update is called once per frame
