@@ -64,6 +64,18 @@ public class PlayerController : MonoBehaviour
         {
             //rb.AddForce(new Vector2(0,jumpForce));
             rb.AddForce(Vector2.up * jumpForce);
+            anim.SetBool("isJumping", true);
+            //isJump = true
+            // Invoke ( ShouldCheckJumpEnd, 1 )
+            return;
         }
+
+        if (groundChecker.isGrounded == true) // && is Jump == false
+        {
+            anim.SetBool("isJumping", false);
+        }    
+
     }
+
+    //void ShouldCheckJumpEnd () => isJump = false;
 }
