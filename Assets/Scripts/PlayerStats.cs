@@ -29,7 +29,7 @@ public class PlayerStats : MonoBehaviour
         CheckHealth();
     }
 
-    public void Heal(float heal)
+    public void GetHealth(float heal)
     {
         heal = Mathf.Abs(heal);
         health = Mathf.Clamp(health + heal, 0, maxHealth);

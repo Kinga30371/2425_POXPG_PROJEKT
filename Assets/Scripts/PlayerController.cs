@@ -70,9 +70,15 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if (groundChecker.isGrounded == true) // && is Jump == false
+        if (rb.velocity.y < 0)
+        {
+            anim.SetBool("isFalling", true);
+        }
+
+            if (groundChecker.isGrounded == true) // && is Jump == false
         {
             anim.SetBool("isJumping", false);
+            anim.SetBool("isFalling", false);
         }    
 
     }

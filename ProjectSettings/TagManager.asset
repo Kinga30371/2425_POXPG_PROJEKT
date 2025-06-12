@@ -38,6 +38,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 56435193
+    locked: 0
+  - name: AssetBackground
+    uniqueID: 4260434453
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Asset
+    uniqueID: 2305703751
+    locked: 0
+  - name: Collectible
+    uniqueID: 1686081683
+    locked: 0
+  - name: UI
+    uniqueID: 4078935383
+    locked: 0
+  - name: Player
+    uniqueID: 1901513895
     locked: 0
